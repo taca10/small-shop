@@ -1,24 +1,59 @@
-# README
+# Database
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### users テーブル
+|column               |type    |
+|:-----               |-----   |
+|name                 |string  |
+|height               |string  |
+|weight               |string  |
+|image                |string  |
 
-Things you may want to cover:
++ has_many clothe
++ has_many shops
++ has_many messages
 
-* Ruby version
+### clothesテーブル
 
-* System dependencies
+|column               |type    |
+|:-----               |-----   |
+|tops                 |string  |
+|jacket               |string  |
+|pants                |string  |
+|shoes                |string  |
+|bag                  |string  |
+|hat                  |string  |
+|accessories          |string  |
+|wallet               |string  |
+|watch                |string  |
 
-* Configuration
++ belongs_to user
++ has_many shops
++ has_many shops through shop_clothes
 
-* Database creation
+### chatテーブル
 
-* Database initialization
+|column               |type    |
+|:-----               |-----   |
+|text                 |string  |
+|image                |string  |
+|user_id              |references |
 
-* How to run the test suite
+### shopテーブル
 
-* Services (job queues, cache servers, search engines, etc.)
+|column               |type    |
+|:-----               |------  |
+|name                 |string  |
+|location             |text    |
 
-* Deployment instructions
++ belongs_to user
++ has_many clothes through shop_clothes
 
-* ...
+
+### shop_clothesテーブル
+|column               |type    |
+|:-----               |-----   |
+|user_id              |references|
+|clothes_id           |references|
+
++ belongs_to user
++ belongs_to shop
