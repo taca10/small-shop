@@ -3,7 +3,4 @@ class TopsController < ApplicationController
 
   end
 
-  def new
-
-  end
 end
