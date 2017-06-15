@@ -1,3 +1,42 @@
-// Place all the styles related to the tops controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.content{
+  background-color: #f9fafc;
+  width: 100%;
+  height: 100vh;
+  &__header{
+    // width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 700px;
+    height: 80px;
+    background-color: white;
+
+    &__item {
+      height: 80px;
+      width: 170px;
+      background-color: white;
+      border: solid #101010;
+
+      &__photo {
+        // width:    100%;
+        // margin:   0;
+        // padding:  0;
+        // position: relative;
+
+        img {
+        position: relative;
+        height: 500px;
+        width: 700px;
+        top: 80px;
+        }
+
+        .text-message {
+          position: absolute;
+          color: white;
+          bottom: 190px;
+          left: 500px;
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}
