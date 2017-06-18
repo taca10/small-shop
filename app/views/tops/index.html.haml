@@ -1,6 +1,14 @@
 .content
-  .content__header
-    .content__header__item
-    .content__header__item__photo
-      = image_tag 'header_bg.jpg'
-      %h1.text-message sサイズだけの服を探そう！
+  .content__header.clearfix
+    .content__header--center
+      %ul
+        %li.content__header--center--search
+          %span さがす
+        %li.content__header--center--like 
+          %span いいね
+        %li.content__header--center--post
+          %span 投稿
+        %li.content__header--center--page 
+          %span マイページ
+        = image_tag 'header_bg.jpg'
+        %h1.text-message sサイズだけの服を探そう！

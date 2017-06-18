@@ -3,40 +3,57 @@
   width: 100%;
   height: 100vh;
   &__header{
-    // width: 100%;
     margin: 0 auto;
     padding: 0;
-    max-width: 700px;
+    width: 100%;
     height: 80px;
     background-color: white;
 
-    &__item {
+    &--center {
       height: 80px;
-      width: 170px;
+      width : 50%;
       background-color: white;
-      border: solid #101010;
+      margin: 0 auto;
+      line-height: 80px;
+      &--search {
+        height: 80px;
+        width: 23%;
+        background-color: white;
+        border: solid #F0F8FF;
+        float: left;
+      }
 
-      &__photo {
-        // width:    100%;
-        // margin:   0;
-        // padding:  0;
-        // position: relative;
+      &--like {
+        height: 80px;
+        width: 23%;
+        background-color: white;
+        border: solid #F0F8FF;
+        float: left;
+      }
+
+      &--post {
+        width: 25%;
+        height: 80px;
+        background-color: white;
+        border: solid #F0F8FF;
+        float: left;
+      }
+
+      &--page {
+        width: 25%;
+        height: 80px;
+        background-color: white;
+        border: solid #F0F8FF;
+        float: left;
+      }
 
         img {
-        position: relative;
         height: 500px;
-        width: 700px;
+        width: 100%;
         top: 80px;
+        right: 565px;
         }
-
-        .text-message {
-          position: absolute;
-          color: white;
-          bottom: 190px;
-          left: 500px;
-          font-size: 30px;
-        }
-      }
     }
   }
 }
+
