@@ -3,13 +3,13 @@
     .content__header--center
       %ul
         %li.content__header--center--search
-          %span さがす
+          = link_to '探す'
         %li.content__header--center--like 
-          %span いいね
+          = link_to 'いいね'
         %li.content__header--center--post
-          %span 投稿
+          = link_to '投稿'
         %li.content__header--center--page 
-          %span マイページ
+          = link_to 'マイページ'
   .content__main
     = image_tag 'header_bg.jpg'
     %h1.text-message sサイズだけの服を探そう！
@@ -19,3 +19,4 @@
     .content__bottom--cordinate--box
       .content__bottom--cordinate--box--image
         = image_tag 'sample.jpg'
+      .content__bottom--cordinate--box--img
