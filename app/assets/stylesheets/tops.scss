@@ -9,15 +9,13 @@ html,body{
   &__header{
     margin: 0 auto;
     padding: 0;
-    // width: 100%;
     height: 60px;
-
     &--center {
       height: 60px;
       width : 660px;
       background-color: white;
       margin: 0 auto;
-      line-height: 47px;
+      line-height: 60px;
       &--search {
         height: 60px;
         width: 25%;
@@ -193,6 +191,9 @@ html,body{
 
             .fa.fa-heart-o{
               padding-top: 12px;
+            }
+            .fa.fa-user-circle{
+              font-size: 15px;
             }
           }
         }

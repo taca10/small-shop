@@ -3,17 +3,17 @@
     .content__header--center
       %ul
         %li.content__header--center--search
-          %i.fa.fa-search
-          = link_to '探す'
+          = link_to root_path do
+            %i.fa.fa-search 探す
         %li.content__header--center--like 
-          %i.fa.fa-thumbs-o-up
-          = link_to 'いいね'
+          = link_to root_path do
+            %i.fa.fa-thumbs-o-up いいね
         %li.content__header--center--post
-          %i.fa.fa-file-text-o
-          = link_to '投稿'
+          = link_to root_path do
+            %i.fa.fa-file-text-o 投稿
         %li.content__header--center--page 
-          %i.fa.fa-user-circle
-          = link_to 'マイページ'
+          = link_to root_path do
+            %i.fa.fa-user-circle マイページ
   .content__main
     = image_tag 'header_bg.jpg'
     %h1.text-message 
