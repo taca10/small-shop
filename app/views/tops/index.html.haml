@@ -1,5 +1,5 @@
 .content
-  .content__header.clearfix
+  .content__header
     .content__header--center
       %ul
         %li.content__header--center--search
@@ -12,11 +12,22 @@
           = link_to 'マイページ'
   .content__main
     = image_tag 'header_bg.jpg'
-    %h1.text-message sサイズだけの服を探そう！
+    %h1.text-message 
 .content__bottom
   .content__bottom--cordinate
     %span コーディネイト一覧
-    .content__bottom--cordinate--box
-      .content__bottom--cordinate--box--image
-        = image_tag 'sample.jpg'
-      .content__bottom--cordinate--box--img
+    .content__bottom--cordinate--list
+      .content__bottom--cordinate--list--box
+        .content__bottom--cordinate--list--box--image
+          = image_tag 'header_bg.jpg'
+        .content__bottom--cordinate--list--box--profile.clearfix
+          .content__bottom--cordinate--list--box--profile--sub
+            %p.img{:style => "background-image: none;"} 画像
+          .content__bottom--cordinate--list--box--profile--main
+            .content__bottom--cordinate--list--box--profile--main--name
+              %span takato
+            .content__bottom--cordinate--list--box--profile--main--txt
+              %span 163cm
+          .content__bottom--cordinate--list--box--profile--main--like a
+
+
