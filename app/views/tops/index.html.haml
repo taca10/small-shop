@@ -3,12 +3,16 @@
     .content__header--center
       %ul
         %li.content__header--center--search
+          %i.fa.fa-search
           = link_to '探す'
         %li.content__header--center--like 
+          %i.fa.fa-thumbs-o-up
           = link_to 'いいね'
         %li.content__header--center--post
+          %i.fa.fa-file-text-o
           = link_to '投稿'
         %li.content__header--center--page 
+          %i.fa.fa-user-circle
           = link_to 'マイページ'
   .content__main
     = image_tag 'header_bg.jpg'
@@ -23,11 +27,27 @@
         .content__bottom--cordinate--list--box--profile.clearfix
           .content__bottom--cordinate--list--box--profile--sub
             %p.img{:style => "background-image: none;"} 画像
+            %p.time 2017.6/18
           .content__bottom--cordinate--list--box--profile--main
             .content__bottom--cordinate--list--box--profile--main--name
               %span takato
             .content__bottom--cordinate--list--box--profile--main--txt
               %span 163cm
-          .content__bottom--cordinate--list--box--profile--main--like a
-
-
+          .content__bottom--cordinate--list--box--profile--like 
+            %i.fa.fa-heart-o
+            %span 20
+      .content__bottom--cordinate--list--boxes
+        .content__bottom--cordinate--list--boxes--image
+          = image_tag 'header_bg.jpg'
+        .content__bottom--cordinate--list--boxes--profile.clearfix
+          .content__bottom--cordinate--list--boxes--profile--sub
+            %p.img{style: "background-image: none;"} 画像
+            %p.times 2017.6/20
+          .content__bottom--cordinate--list--boxes--profile--main
+            .content__bottom--cordinate--list--boxes--profile--main--name
+              %span inui
+            .content__bottom--cordinate--list--boxes--profile--main--txt
+              %span 170cm
+          .content__bottom--cordinate--list--boxes--profile--like 
+            %i.fa.fa-heart-o
+            %span 1
