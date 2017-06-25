@@ -1,0 +1,53 @@
+.content
+  .content__header
+    .content__header--center
+      %ul
+        %li.content__header--center--search
+          = link_to root_path do
+            %i.fa.fa-search 探す
+        %li.content__header--center--like 
+          = link_to root_path do
+            %i.fa.fa-thumbs-o-up いいね
+        %li.content__header--center--post
+          = link_to root_path do
+            %i.fa.fa-file-text-o 投稿
+        %li.content__header--center--page 
+          = link_to root_path do
+            %i.fa.fa-user-circle マイページ
+  .content__main
+    = image_tag 'header_bg.jpg'
+    %h1.text-message 
+.content__bottom
+  .content__bottom--cordinate
+    %span コーディネイト一覧
+    .content__bottom--cordinate--list
+      .content__bottom--cordinate--list--box
+        .content__bottom--cordinate--list--box--image
+          = image_tag 'header_bg.jpg'
+        .content__bottom--cordinate--list--box--profile.clearfix
+          .content__bottom--cordinate--list--box--profile--sub
+            %p.img{:style => "background-image: none;"} 画像
+            %p.time 2017.6/18
+          .content__bottom--cordinate--list--box--profile--main
+            .content__bottom--cordinate--list--box--profile--main--name
+              %span takato
+            .content__bottom--cordinate--list--box--profile--main--txt
+              %span 163cm
+          .content__bottom--cordinate--list--box--profile--like 
+            %i.fa.fa-heart-o
+            %span 20
+      .content__bottom--cordinate--list--boxes
+        .content__bottom--cordinate--list--boxes--image
+          = image_tag 'header_bg.jpg'
+        .content__bottom--cordinate--list--boxes--profile.clearfix
+          .content__bottom--cordinate--list--boxes--profile--sub
+            %p.img{style: "background-image: none;"} 画像
+            %p.times 2017.6/20
+          .content__bottom--cordinate--list--boxes--profile--main
+            .content__bottom--cordinate--list--boxes--profile--main--name
+              %span inui
+            .content__bottom--cordinate--list--boxes--profile--main--txt
+              %span 170cm
+          .content__bottom--cordinate--list--boxes--profile--like 
+            %i.fa.fa-heart-o
+            %span 1

@@ -1,0 +1,204 @@
+html,body{
+  padding:0;margin:0;background-color: #f9fafc;
+  width: 1024px;
+}
+.content{
+  background-color: #f9fafc;
+  width: 100%;
+  height: 100%;
+  &__header{
+    margin: 0 auto;
+    padding: 0;
+    height: 60px;
+    &--center {
+      height: 60px;
+      width : 660px;
+      background-color: white;
+      margin: 0 auto;
+      line-height: 60px;
+      &--search {
+        height: 60px;
+        width: 25%;
+        background-color: white;
+        border: solid #F0F8FF;
+        text-align: center;
+        float: left;
+      }
+
+      &--like {
+        height: 60px;
+        width: 25%;
+        background-color: white;
+        border: solid #F0F8FF;
+        float: left;
+        text-align: center;
+      }
+
+      &--post {
+        width: 25%;
+        height: 60px;
+        background-color: white;
+        border: solid #F0F8FF;
+        float: left;
+        text-align: center;
+      }
+
+      &--page {
+        width: 141px;
+        height: 60px;
+        background-color: white;
+        border: solid #F0F8FF;
+        float: left;
+        text-align: center;
+      }
+
+    }
+  }
+    img {
+    padding-left: 186px;
+    height: 500px;
+    width: 654px;
+    top: 80px;
+    right: 565px;
+    }
+
+    .text-message {
+      position: relative;
+      bottom: 300px;
+      left: 300px;
+      color: white;
+      font-size: 30px;
+    }
+  &__bottom {
+    margin-top: 15px;
+    clear: both;
+    &--cordinate {
+    padding-left: 180px;
+      span{
+        border-bottom: 1px solid #2e1754;
+      }
+      &--list {
+        width : 654px;
+        border: 1px #ddd solid;
+        background-color: #f0f8ff;
+        &--box {
+          border: 1px #ddd solid;
+          border-radius: 3px;
+          width: 280px;
+          margin: 18px 0 0 18px;
+          background: #fff;
+          float: left;
+
+          &--image {
+            img {
+              height: 350px;
+              width : 280px;
+            }
+          }
+          &--profile {
+            @include clearfix();
+            padding: 9px 10px 9px 10px;
+            border-top: 1px #ddd solid;
+            &--sub {
+              position: relative;
+              width: 50px;
+              float: left;
+              .time {
+                color: #fff;
+                font-size: 11px;
+                position: absolute;
+                bottom: 40px;
+              }
+            }
+            &--main {
+              width: 130px;
+              padding: 2px 0 0 0;
+              -webkit-padding-before: 3px;
+              float: left;
+              &--name {
+                font-size: 14px;
+                line-height: 1.2;
+                font-weight: bold;
+                padding-left: 25px;
+              }
+              &--txt {
+                font-size: 13px;
+                line-height: 1.2;
+                margin: 2px 0 0 0;
+                padding-left: 25px;
+              }
+            }
+            &--like {
+              font-weight: bold;
+              font-size: 15px;
+            }
+            .fa.fa-heart-o{
+              padding-top: 12px;
+            }
+          }
+        }
+        &--boxes {
+          border: 1px #ddd solid;
+          border-radius: 3px;
+          width: 280px;
+          margin: 18px 0 0 18px;
+          background: #fff;
+          float: left;
+          margin: 18px 0 0 50px;
+          &--image {
+             img {
+              height: 350px;
+              width : 280px;
+            }
+          }
+          &--profile {
+            @include clearfix();
+            padding: 9px 10px 9px 10px;
+            border-top: 1px #ddd solid;
+            &--sub {
+              position: relative;
+              width: 50px;
+              float: left;
+               .times {
+                color: #fff;
+                font-size: 11px;
+                position: absolute;
+                bottom: 40px;
+              }
+            }
+            &--main {
+              width: 130px;
+              padding: 2px 0 0 0;
+              -webkit-padding-before: 3px;
+              float: left;
+              &--name {
+                font-size: 14px;
+                line-height: 1.2;
+                font-weight: bold;
+                padding-left: 25px;
+              }
+              &--txt {
+                font-size: 13px;
+                line-height: 1.2;
+                margin: 2px 0 0 0;
+                padding-left: 25px;
+              }
+            }
+            &--like {
+              font-weight: bold;
+              font-size: 15px;
+            }
+
+            .fa.fa-heart-o{
+              padding-top: 12px;
+            }
+            .fa.fa-user-circle{
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
