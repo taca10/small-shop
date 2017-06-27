@@ -55,3 +55,4 @@ gem 'haml-rails'
 gem "font-awesome-rails"
 gem 'omniauth'
 gem 'omniauth-twitter'
+gem 'dotenv-rails'
