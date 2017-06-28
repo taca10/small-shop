@@ -13,7 +13,7 @@
             %i.fa.fa-file-text-o 投稿
         - if logged_in?
           %li.content__header--center--page 
-            = link_to top_path(@user) do
+            = link_to root_path do
               %i.fa.fa-user-circle マイページ
         - else
           %li.content__header--center--page 
