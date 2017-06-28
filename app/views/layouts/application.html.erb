@@ -7,7 +7,23 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+  <% if logged_in? %>
+    <ul class="nav navbar-nav navbar-right">
+      <li><%= link_to 'ログアウト', logout_path %></li>
+    </ul>
+  <% else %>
+    <ul class="nav navbar-nav navbar-right">
+      <li><%= link_to 'Twitterでログイン', '/auth/twitter' %></li>
+    </ul>
+  <% end %>
+</div>
+<div class="container">
+  <% if flash[:notice] %>
+    <div class="alert alert-success">
+      <%= flash[:notice] %>
+    </div>
+  <% end %>
   <body>
     <%= yield %>
   </body>
