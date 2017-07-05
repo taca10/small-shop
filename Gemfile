@@ -56,4 +56,5 @@ gem "font-awesome-rails"
 gem 'devise'
 gem 'omniauth-twitter'
 gem 'pry-rails'
+gem 'paperclip'
 gem 'dotenv-rails'
